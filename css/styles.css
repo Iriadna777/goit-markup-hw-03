@@ -28,6 +28,31 @@ a {
   text-decoration: none;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   background: var(--body-background-color);
@@ -37,9 +62,22 @@ body {
 /* Header */
 
 .header {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
+
+.heder-container {
+  display: flex;
+  align-items: center;
+}
+
 .header-navigation {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: space-between;
 }
+
 .header-logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
@@ -48,6 +86,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--logo-color);
   text-transform: uppercase;
+  margin-right: 76px;
 }
 
 .accent-logo {
@@ -55,6 +94,10 @@ body {
   color: var(--header-accent-logo);
 }
 .header-menu {
+  display: flex;
+  margin: 0;
+  padding-left: 0;
+  gap: 40px;
 }
 .header-menu-item {
 }
@@ -79,8 +122,14 @@ body {
 
 .address {
   font-style: normal;
+  margin-left: auto;
 }
 .address-list {
+  display: flex;
+  margin: 0;
+  padding-left: 0;
+  gap: 40px;
+  margin-left: 332px;
 }
 .address-list-item {
 }
@@ -102,6 +151,12 @@ body {
 .hero {
   background: var(--hero-background-color);
 }
+
+.hero-container {
+  background-color: #2e2f42;
+  padding: 188px 0;
+}
+
 .hero-title {
   font-weight: 700;
   font-size: 56px;
@@ -109,6 +164,11 @@ body {
   color: var(--title-color);
   text-align: center;
   letter-spacing: 0.02em;
+  max-width: 496px;
+  margin-top: 0;
+  margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero-btn {
   font-family: inherit;
@@ -118,7 +178,14 @@ body {
   letter-spacing: 0.04em;
   color: var(--hero-btn-color);
   background: var(--hero-btn-background);
+  border-radius: 4px;
   cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  height: 56px;
+  min-width: 169px;
+  border: none;
 }
 
 .hero-btn:hover,
@@ -129,12 +196,26 @@ body {
 /* Section 2 */
 
 .advantages {
+  padding: 120px 0;
 }
 .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .advantages-list {
+  display: flex;
+  gap: 24px;
 }
 .advantages-item {
+  width: calc((100% - 72px) / 4);
 }
 .advantages-subtitle {
   font-weight: 500;
@@ -142,6 +223,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--main-subtitle-color);
+  margin-bottom: 8px;
 }
 .advantages-item-text {
   font-size: 16px;
@@ -153,6 +235,7 @@ body {
 /* Section 3 */
 
 .icon {
+  padding-bottom: 120px;
 }
 .icon-title {
   font-weight: 700;
@@ -162,10 +245,16 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  max-width: 323px;
+  margin: 0 auto;
+  margin-bottom: 72px;
 }
 .icon-list {
+  display: flex;
+  gap: 24px;
 }
 .icon-item {
+  width: calc((100% - 48px) / 3);
 }
 
 /* Section 4 */
@@ -173,6 +262,13 @@ body {
 .team {
   background: var(--team-background-color);
 }
+
+.team-container {
+  padding-top: 120px;
+  padding-bottom: 72px;
+  background-color: #f4f4fd;
+}
+
 .team-title {
   font-weight: 700;
   font-size: 36px;
@@ -181,11 +277,15 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 .team-list {
+  display: flex;
+  gap: 24px;
 }
 .team-item {
   background-color: #ffffff;
+  width: calc((100% - 72px) / 4);
 }
 .team-subtitle {
   font-weight: 500;
@@ -193,6 +293,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--main-subtitle-color);
+  gap: 8px;
 }
 .team-item-text {
   font-size: 16px;
@@ -206,6 +307,16 @@ body {
 .portfolio {
 }
 .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .filter-list {
 }
