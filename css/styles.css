@@ -52,8 +52,8 @@ img {
 .container {
   width: 100%;
   max-width: 1158px;
-  padding: 0 15px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 body {
@@ -71,7 +71,6 @@ body {
 .heder-container {
   display: flex;
   align-items: center;
-  padding: 24px 0;
 }
 
 .header-navigation {
@@ -101,6 +100,7 @@ body {
   gap: 40px;
 }
 .header-menu-item {
+  padding: 24px 0;
 }
 
 .header-menu-link {
