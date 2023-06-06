@@ -100,8 +100,6 @@ body {
   gap: 40px;
 }
 .header-menu-item {
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .header-menu-link {
@@ -119,6 +117,8 @@ body {
 
 .link {
   text-decoration: none;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 /* Address */
