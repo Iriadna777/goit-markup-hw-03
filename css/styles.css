@@ -100,9 +100,8 @@ body {
 }
 .header-menu {
   display: flex;
-  margin: 0;
-  padding-left: 0;
   gap: 40px;
+  padding: 24px 0;
 }
 .header-menu-item {
 }
@@ -155,11 +154,11 @@ body {
 
 .hero {
   background: var(--hero-background-color);
+  padding: 188px 0;
 }
 
 .hero-container {
   background-color: #2e2f42;
-  padding: 188px 0;
 }
 
 .hero-title {
@@ -244,10 +243,10 @@ body {
 /* Section 3 */
 
 .icon {
+  padding-bottom: 120px;
 }
 
 .icon-container {
-  padding-bottom: 120px;
 }
 
 .icon-title {
@@ -272,10 +271,10 @@ body {
 
 .team {
   background: var(--team-background-color);
+  padding: 120px 0;
 }
 
 .team-container {
-  padding-top: 120px;
   background-color: #f4f4fd;
 }
 
@@ -326,11 +325,11 @@ body {
 /* Projects */
 
 .portfolio {
+  padding-top: 96px;
+  padding-bottom: 120px;
 }
 
 .portfolio-container {
-  padding-top: 96px;
-  padding-bottom: 120px;
 }
 
 .visually-hidden {
@@ -347,7 +346,9 @@ body {
 }
 .filter-list {
   display: flex;
-  text-align: center;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
 }
 .filter-item {
 }
@@ -361,19 +362,15 @@ body {
   background: #f4f4fd;
   cursor: pointer;
   border-radius: 4px;
-
-  display: inline-block;
-  margin: 0 auto;
-  text-align: center;
-  height: 48px;
-  min-width: 169px;
-  border: none;
+  padding: 12px 24px;
+  border: 1px solid #e7e9fc;
 }
 
 .filter-btn:hover,
 .filter-btn:focus {
   background: #404bbf;
   color: #ffffff;
+  border: 1px solid transparent;
 }
 .project-list {
   display: flex;
@@ -394,7 +391,9 @@ body {
 
 .card-project {
   max-width: 360px;
-  padding: 32px 0;
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .project-subtitle {
@@ -403,6 +402,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--main-subtitle-color);
+  margin-bottom: 8px;
 }
 .project-item-text {
   font-size: 16px;
@@ -415,9 +415,12 @@ body {
 
 .footer {
   background: var(--footer-background-color);
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding: 100px 0;
 }
+
+.footer-container {
+}
+
 .footer-logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
@@ -426,8 +429,8 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--logo-color);
-  display: flex;
-  padding-bottom: 16px;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-accent-logo {
