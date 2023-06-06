@@ -65,13 +65,13 @@ body {
 /* Header */
 
 .header {
-  padding: 24px 0;
   border-bottom: 1px solid #e7e9fc;
 }
 
 .heder-container {
   display: flex;
   align-items: center;
+  padding: 24px 0;
 }
 
 .header-navigation {
